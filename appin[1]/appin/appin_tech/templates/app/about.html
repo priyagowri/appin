@@ -1,0 +1,132 @@
+{% extends 'app/layouts/main.html' %}
+{% block title %}
+{%load static%}
+
+appin  | 
+{% endblock title %}
+
+{% block content %}
+<head>
+  <style>
+    #subjects{
+      align-content: center;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+          
+            max-height: 30px;
+            max-width: 40vh;
+            box-sizing: border-box;
+            display:block;
+            padding:45px;
+            
+            margin-top: 5px;
+            background-color: rgb(214, 237, 237);
+            margin-right:5px;
+         
+            
+    }
+    #subjects:hover{
+      background-color: rgba(84, 227, 18, 0.918);
+            box-shadow: 0px 0px 10px 0px rgba(1, 58, 129, 0.917);
+            transition: 0.5s;
+    }
+   #text{
+    font-size: 18px;
+    margin-top: -2%;
+
+   }
+   #para{
+    font-size: 20px;
+    
+
+   }
+
+  </style>
+</head>
+
+  <div class="container" style="margin-top:70px;" >
+    <div class="row">
+      <div class="col-7">
+        <h4 class="mb-3">About Appin Technology Lab...</h4><br><br>
+        <p>Appin Technology, Coimbatore is a Training division of Ether Services, a company registered in Tamil Nadu. Ether Services started in the year 2013 with the goal of providing Software development Services in Web Design, Web Development, Mobile App Development and Quality Software Training.<br><br>
+
+          The founder of this Company is Mohan Natarajan has quite an experience in Software Product Development, Mechanical Design (CAD), and Software Education. Gradually we entered allied software services areas such as Web Hosting and Staffing services. Ether Services played an important role in providing quality services and early-stage implementation of software development to Tier II and Tier III cities of Tamil Nadu. <br><br>
+          
+          Our Job oriented courses not only concentrate on Technology Training but also on assisting students in getting jobs.<br> 
+          
+          Ether Services provides solutions to many start-ups.<br><br> </p>
+
+        <hr style="border-color:#b8bfc2;">
+      </div>
+      <div class="col-5">
+        <img src="{%static 'images/appin image.jpg'%}" width="500" height="400">
+        <h1 style="border-color:#b8bfc2;"></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="text-align:center;">
+      <h1>Appin Technology Lab Training</h1>
+      </div>
+
+    </div>
+    <div class="row mb-5">
+      <div class="col-12" style="text-align:center;">
+        <p>Appin Technology Lab is pioneer in providing IT courses to Students, Job seekers and working professionals. Courses covered in Appin Coimbatore are:</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-3" id="subjects">
+        <h4 id="text">Full Stack Python</h4>
+      </div>
+      <div class="col-3"  id="subjects">
+        <h4 id="text">Full Stack Java</h4>
+      </div>
+      <div class="col-3"  id="subjects">
+        <h4 id="text">Full Stack Python</h4>
+      </div>
+      <div class="col-3"  id="subjects">
+        <h4 id="text">Full Stack Python</h4>
+      </div>
+    </div>
+    
+    <div class="row mb-5 mx-5" style="text-align:center;justify-content:space-around;">
+      <div class="col-4" id="subjects">
+        <h4 id="text">Full Stack Python</h4>
+      </div>
+      <div class="col-4"  id="subjects">
+        <h4 id="text">Full Stack Java</h4>
+      </div>
+      <div class="col-4"  id="subjects">
+        <h4 id="text">Full Stack Python</h4>
+      </div>
+     
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12" style="text-align:center;">
+        <h1>Top 10 Reasons To Join Appin Technology Coimbatore For Training</h1><br><br>
+      </div>
+      <div class="col-6 "><p id="para">
+  <i class="fa fa-check"></i>     Over a decade of experience in Software training affecting  of students.<br>
+  <i class="fa fa-check"></i>     Syllabus formulated by Industry Experts<br>
+  <i class="fa fa-check"></i>     Economical training programs that fulfills students, job seekers and working professionals.<br>
+  <i class="fa fa-check"></i>     Project Based Training<br>
+  <i class="fa fa-check"></i>     Course Completions & Project Experience Certificate<br>
+  <i class="fa fa-check"></i>     Good Placement Record.<br>
+  <i class="fa fa-check"></i>     Live Projects to execute during training<br>
+  <i class="fa fa-check"></i>     NPTEL Associated Company<br>
+  <i class="fa fa-check"></i>     Recognized as Startup Company by DPIIT<br>
+  <i class="fa fa-check"></i>     Flexible Timings & Weekend batches available</p><br>
+      </div>
+      <div class="col-6">
+
+      </div>
+    </div>
+  </div>
+{% endblock content %}

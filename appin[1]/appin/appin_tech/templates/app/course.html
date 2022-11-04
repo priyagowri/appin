@@ -1,0 +1,188 @@
+{%extends 'app/layouts/main.html'%}
+{%block title%}
+courses
+{% endblock title%}
+{%block content%}
+{%load static%}
+<head>
+    <style>
+        #allcourses{
+            text-align: center;
+            justify-content: center;
+            color: rgb(3, 232, 37);
+            font-size: 20px;
+           
+        }
+        #allcourses:hover{
+            color: rgb(8, 1, 15);
+           
+            transition: 0.5s;
+        }
+        #youtube{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            margin-left: 210px;
+            margin-top: 5%;
+            box-shadow: 0px 0px 10px 0px rgba(180, 5, 5, 0.917);
+        }
+        #h111{
+            font-size: 40px;
+            margin-top: 25%;
+        }
+        #TC{
+            align-content: center;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3%;
+            
+            box-sizing: border-box;
+            display:block;
+            
+        }
+        #TC:hover{
+            background-color: rgba(24, 125, 225, 0);
+            box-shadow: 0px 0px 10px 0px rgba(1, 58, 129, 0.917);
+            transition: 0.5s;
+        }
+        #icons{
+            margin-top: 30px;
+        }
+        #icons2{
+            margin-top: 10px;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        
+    </style>
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-5" style="text-align:center;">
+            <h1 id="h111">our placement clients</h1><br><br>
+            {%include 'app/inc/slider.html'%}
+            <h1 style="border-color:#b8bfc2;" ></h1>
+          </div>
+
+        </div>
+    </div><br><br>
+<div class="container">
+    <div class="row my-5" style="text-align:center" >
+        <div class="col-3" id="TC">
+            <i class="fa fa-hand-peace-o fa-5x"  id="icons" style="color:blueviolet;margin-top:30px;"></i>
+                <h2>Trending courses</h2>
+        <p>Php | Java | Android | Digital Marketing | Full Stack
+            Program</p>
+    </div>
+    <div class="col-3" id="TC">
+        <i class="fa fa-book fa-5x" id="icons" style="color:aqua"></i>
+        <h2>Syllabus</h2>
+        <p>Figured by IITians that fulfills understudies,work searchers and working experts.</p>
+    </div>
+    <div class="col-3" id="TC">
+        <i class="fa fa-user fa-5x" id="icons" style="color:rgb(239, 5, 5)"></i>
+        <h2>Staffs</h2>
+        <p>Dedicated staffs with high end study environment and overall sense of respect in classroom.</p>
+    </div>
+    <div class="col-3" id="TC">
+        <i class="fa fa-graduation-cap fa-5x" id="icons" style="color:rgb(185, 200, 20)"></i>
+        <h2>certification</h2>
+        <p>Offering Quality Certifications Backed by Renowned Accreditation and Associations – ISO 9001:2015, IADL, UK and USDLA, NPTEL and NASSCOM</p>
+    </div>
+    </div>
+    <div class="row my-5" style="text-align: center;">
+    <div class="col-12">
+        <h1>Appin Popular Software Courses in Coimbatore</h1>
+        <p>There are several Software training and development courses available, but Appin predicts few courses as Trending, Popular and Job oriented for Students & Jobseekers of any degree.</p>
+    </div>
+    </div>
+    <div class="row my-6" style="text-align: center">
+        <div class="col-4  " id="TC">
+            <img src="{%static 'images/python.png'%}" id="icons2"width="80"><br>
+            <h3>Python</h3>
+            <p>Get trained from Industry Expert
+                Course Completion Certificate
+                Project Experience Certificate
+                LIVE Projects, Live Session</p><br>
+                <button type="button" class="btn btn-warning">Enroll Now</button>
+                <button type="button" class="btn btn-info">View Details</button>
+
+        </div>
+        
+        <div class="col-4 " id="TC">
+            <img src="{%static 'images/java.png'%}" id="icons2"width="80"><br>
+            <h3>Java</h3>
+            <p>Get trained from Real Time Consultant
+                Course Completion Certificate
+                Project Experience Certificate
+                LIVE Projects, Live Session</p><br>
+                <button type="button" class="btn btn-warning">Enroll Now</button>
+                <button type="button" class="btn btn-info">View Details</button>
+
+            </div>
+        
+            <div class="col-4" id="TC">
+                <img src="{%static 'images/degitalmark.png'%}" id="icons2" width="75"><br>
+                <h3>Digital Marketing</h3>
+                <p>Get trained from Real Time Consultant
+                    Course Completion Certificate
+                    Project Experience Certificate
+                    LIVE Projects, Live Session</p><br>
+                    <button type="button" class="btn btn-warning">Enroll Now</button>
+                    <button type="button" class="btn btn-info">View Details</button>
+
+                </div>
+            <div class="row mt-5">
+            <div class="col-4" id="TC">
+                <img src="{%static 'images/android.jpg'%}"id="icons2" width="50"><br>
+                <h3>Android Development</h3>
+                <p>Get trained from Real Time Consultant
+                    Course Completion Certificate
+                    Project Experience Certificate
+                    LIVE Projects, Live Session</p><br>
+                    <button type="button" class="btn btn-warning">Enroll Now</button>
+                    <button type="button" class="btn btn-info">View Details</button>
+                
+                </div>
+            <div class="col-4" id="TC">
+                <img src="{%static 'images/phpele.jpg'%}" id="icons2"width="70"><br>
+                <h3>Php</h3>
+                <p>Get trained from Real Time Consultant
+                    Course Completion Certificate
+                    Project Experience Certificate
+                    LIVE Projects, Live Session</p><br>
+                    <button type="button" class="btn btn-warning">Enroll Now</button>
+                    <button type="button" class="btn btn-info">View Details</button>
+
+                    </div>
+            <div class="col-4" id="TC">
+                <img src="{%static 'images/fullstack.png'%}" id="icons2"width="85"><br>
+                <h3>Full Stack</h3>
+                <p>Get trained from Real Time Consultant
+                    Course Completion Certificate
+                    Project Experience Certificate
+                    LIVE Projects, Live Session</p><br>
+                    <button type="button" class="btn btn-warning">Enroll Now</button>
+                    <button type="button" class="btn btn-info">View Details</button>
+                    </div>     
+          </div>         
+    </div>         
+    </div>
+    <div class="row mb-5 mt-5" id="allcourses"><div class="col-12">
+        <i class="fa fa-location-arrow"></i>  all courses
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <h1 style="text-align:center; justify-content:center; font-size: 40px;">Appin Software Training in Coimbatore Video</h1>
+    </div><br>
+
+</div>
+<div class="row mb-5">
+    <div class="col-12">
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/nzJpYY1OqxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="youtube"></iframe>
+    </div>
+</div>
+    {%endblock content%}
